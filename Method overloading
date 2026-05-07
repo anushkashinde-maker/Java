@@ -1,0 +1,34 @@
+public class OverloadingDemo {
+
+    // Power methods (Overloaded)
+    static int power(int a, int b) {
+        return (int)Math.pow(a, b);
+    }
+
+    static double power(double a, double b) {
+        return Math.pow(a, b);
+    }
+
+    // Absolute value methods (Overloaded)
+    static int absolute(int a) {
+        return Math.abs(a);
+    }
+
+    static double absolute(double a) {
+        return Math.abs(a);
+    }
+
+    public static void main(String[] args) {
+
+        // Using overloaded methods
+        System.out.println("Power (int): " + power(2, 3));
+        System.out.println("Power (double): " + power(2.5, 2));
+
+        System.out.println("Absolute (int): " + absolute(-10));
+        System.out.println("Absolute (double): " + absolute(-5.7));
+
+        // Using Math class directly
+        System.out.println("Math.pow(): " + Math.pow(3, 4));
+        System.out.println("Math.abs(): " + Math.abs(-20));
+    }
+}
